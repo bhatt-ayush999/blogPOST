@@ -2,6 +2,11 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts",{method:"GET"})
     .then(res => res.json())
     .then(data =>
         {let objArr = data.slice(0,5)
-         console.log(objArr)   
+         let htmlEls = ""
+         for(let posts of objArr) {
+            htmlEls += `<h2>${posts.title}</h2>
+                    <p>${posts.body}</p>`
+         }  
+         document.getElementById("blogs").innerHTML = htmlEls
         }
     )
