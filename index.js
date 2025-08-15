@@ -5,7 +5,8 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts",{method:"GET"})
          let htmlEls = ""
          for(let posts of objArr) {
             htmlEls += `<h2>${posts.title}</h2>
-                    <p>${posts.body}</p>`
+                    <p>${posts.body}</p>
+                    <hr/>`
          }  
          document.getElementById("blogs").innerHTML = htmlEls
         }
