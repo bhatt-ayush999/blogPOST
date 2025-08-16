@@ -11,3 +11,17 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts",{method:"GET"})
          document.getElementById("blogs").innerHTML = htmlEls
         }
     )
+
+const form = document.getElementById("form")
+    
+form.addEventListener("submit",function(event){
+    event.preventDefault()
+    let blogTitle = document.getElementById("postTitle").value
+    let blogBody = document.getElementById("postBody").value
+    let blog = {
+        title : blogTitle,
+        body: blogBody
+    }
+
+    console.log(blog)
+})    
