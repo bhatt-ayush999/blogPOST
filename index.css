@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    background-color: #a3b18a;
+}
+
+.navbar {
+    background-color: #dad7cd;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+#blogs {
+    padding: 30px 10px;
+}
