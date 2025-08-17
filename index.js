@@ -43,5 +43,8 @@ form.addEventListener("submit",function(event){
                     renderPost()
                 }
     )
+
+    document.getElementById("postTitle").value = ""
+    document.getElementById("postBody").value = ""
 })    
 
