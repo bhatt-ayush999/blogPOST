@@ -38,6 +38,10 @@ form.addEventListener("submit",function(event){
      }
     })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => {
+                    objArr.unshift(data),
+                    renderPost()
+                }
+    )
 })    
 
